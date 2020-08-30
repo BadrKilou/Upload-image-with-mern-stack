@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.photo-list{
+
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+.photo-list .photo{
+  width: 400px;
+  object-fit: cover;
+}
+.photo img{
+  width: 100%;
+  border: 4px solid rgb(166, 251, 166);
+  margin: 0px 5px;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.photo{
+  overflow: hidden;
+  margin: 10px;
+
+}
+
+img:hover{
+  transform: scale(1.1);
+  transition: transform 0.8s;
+}
+.form-data{
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+form{
+  max-width: 1200px;
+}
+
+.errorMsg{
+  background: #f254;
+  color: rgb(44, 37, 37);
+  padding: 5px;
+}
+
+.successMsg{
+  background: rgba(53, 201, 102, 0.493);
+  color: rgb(44, 37, 37);
+  padding: 5px;
+}
